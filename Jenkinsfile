@@ -16,17 +16,10 @@ pipeline {
             steps {
                 echo 'Deploying....'
             }
-        }
-    }
-}
-pipeline {
-    agent any
-
-    stages {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-            }
+            }            
         }
     }
 }
