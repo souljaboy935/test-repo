@@ -1,2 +1,21 @@
-sh '''lsblk
-echo -e "Hello, my name is Sulaiman Balogun; \\n What is yours?"'''
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+}
